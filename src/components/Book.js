@@ -1,9 +1,10 @@
 import React from 'react'
+import './Book.css';
 
 function Book({ title, author }) {
     return (
       <>
-      <div>
+      <div className='book-parent'>
         <div>
             <span>Action</span>
             <h2>{title}</h2>
@@ -19,7 +20,7 @@ function Book({ title, author }) {
             <h5>Completed</h5>
         </div>
         <div>
-            <h5>CURRENT CHAPTER</h5>
+            <span>CURRENT CHAPTER</span>
             <h4>Chapter 17</h4>
             <button type='button'>UPDATE PROGRESS</button>
         </div>

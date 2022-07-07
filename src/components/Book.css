@@ -1,0 +1,5 @@
+.book-parent {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}

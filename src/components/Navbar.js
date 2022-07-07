@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
     return (
       <>
+        <div className='nav-head'>
         <h1>Bookstore CMS</h1>
         <div className="nav-links">
           <Link className="links" to="/Books">
@@ -12,6 +13,7 @@ function Navbar() {
           <Link className="links" to="/Categories">
             Categories
           </Link>
+        </div>
         </div>
       </>
     );
