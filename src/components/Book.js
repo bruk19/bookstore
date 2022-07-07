@@ -1,11 +1,10 @@
 import React from 'react'
 
-function Book() {
+function Book({ title, author }) {
     return (
       <>
-        <main>
-          
-        </main>
+        <span>Action</span>
+        
       </>
     );
   }
