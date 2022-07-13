@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { addBook } from '../redux/books/Books';
+import './Book.css';
 
 const BookForm = () => {
   const dispatch = useDispatch();
@@ -12,15 +14,16 @@ const BookForm = () => {
     const newBook = {
       author,
       title,
-      id: new Date().toString(),
+      id: new Date().getMilliseconds().toString(),
     };
     dispatch(addBook(newBook));
   };
 
   return (
-    <div className="book form">
+  
+    <div className="book-form">
       <h2>ADD NEW BOOK</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e)=> handleSubmit(e)}>
         <input type="text" name="title" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
         <input type="text" name="author" placeholder="Author" onChange={(e) => setAuthor(e.target.value)} />
         <button type="submit">ADD BOOK</button>

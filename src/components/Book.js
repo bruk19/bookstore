@@ -1,5 +1,8 @@
 import React from 'react'
 import './Book.css';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/Books';
+
 
 const Book = ({ title, author, id }) => {
   const dispatch = useDispatch();
@@ -26,7 +29,7 @@ const Book = ({ title, author, id }) => {
         <button type="button">UPDATE PROGRESS</button>
       </div>
     </div>
+    
   );
 };
-
 export default Book;

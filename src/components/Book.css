@@ -1,5 +1,9 @@
-.book-parent {
+.book {
   display: flex;
   justify-content: space-between;
   margin: 30px;
+}
+
+.book-form {
+  position: absolute;
 }
