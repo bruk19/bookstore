@@ -1,32 +1,32 @@
 import React from 'react'
 import './Book.css';
 
-function Book({ title, author }) {
-    return (
-      <>
-      <div className='book-parent'>
-        <div>
-            <span>Action</span>
-            <h2>{title}</h2>
-            <h4>{author}</h4>
-            <div>
-                <button type='button'>comments</button>
-                <button type='button'>Remove</button>
-                <button type='button'>Edit</button>
-            </div>
-        </div>
-        <div>
-            <span>64%</span>
-            <h5>Completed</h5>
-        </div>
-        <div>
-            <span>CURRENT CHAPTER</span>
-            <h4>Chapter 17</h4>
-            <button type='button'>UPDATE PROGRESS</button>
-        </div>
+const Book = ({ title, author, id }) => {
+  const dispatch = useDispatch();
 
+  return (
+    <div className="book">
+      <div>
+        <span>Action</span>
+        <h2>{title}</h2>
+        <h3>{author}</h3>
+        <div>
+          <button type="button">Comments</button>
+          <button type="button" onClick={() => dispatch(removeBook(id))}>Remove</button>
+          <button type="button">Edit</button>
+        </div>
       </div>
-      </>
-    );
-  }
+      <div>
+        <span>64%</span>
+        <span>Completed</span>
+      </div>
+      <div>
+        <h3>CURRENT CHAPTER</h3>
+        <span>Chapter 17</span>
+        <button type="button">UPDATE PROGRESS</button>
+      </div>
+    </div>
+  );
+};
+
 export default Book;
