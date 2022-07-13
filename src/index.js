@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
 import Navbar from './components/Navbar';
-import BookForm from './components/BookForm';
+import Books from './pages/Books';
 import { Provider } from 'react-redux';
 import Book from './components/Book';
 import App from './App';
@@ -16,7 +16,7 @@ root.render(
     <Navbar />
     <Book />
     <App />
-    <BookForm />
+    <Books />
   </Provider>
   </React.StrictMode>
   </BrowserRouter>
