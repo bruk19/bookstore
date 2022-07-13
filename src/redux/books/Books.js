@@ -1,7 +1,18 @@
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
-const initialState = [];
+const initialState = [
+  {
+    title: 'The Hunger Games',
+    author: 'Suzanne Collins',
+    id: 'ashda9ysudhasd0',
+  },
+  {
+    title: 'Dune',
+    author: 'Frank Herbert',
+    id: 'asdahsd9qhwdoa0a9wq',
+  },
+];
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
