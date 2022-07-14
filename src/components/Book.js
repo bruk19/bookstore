@@ -4,13 +4,13 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/Books';
 
 
-const Book = ({ title, author, id }) => {
+const Book = ({ title, author, id, category }) => {
   const dispatch = useDispatch();
 
   return (
     <div className="book">
       <div>
-        <span>Action</span>
+        <span>{category}</span>
         <h2>{title}</h2>
         <h3>{author}</h3>
         <div>
