@@ -22,6 +22,7 @@ const Books = () => {
         )}
       </section>
       <section>
+        <loadBooks />
         <BookForm />
       </section>
     </>

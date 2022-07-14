@@ -8,9 +8,12 @@ const reducers = combineReducers({
   categories,
 });
 const enhancers = compose(
-  applyMiddleware(),
+  applyMiddleware(thunk),
 );
 
-const bookstoreStore = createStore(reducers, applyMiddleware(thunk));
+const bookstoreStore = createStore(
+  reducers,
+  enhancers,
+);
 
 export default bookstoreStore;
