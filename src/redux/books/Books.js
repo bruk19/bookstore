@@ -9,7 +9,7 @@ export default function reducer(state = initialState, action) {
     case BOOKS_LOADED:
       return action.payload;
     case ADD_BOOK:
-      return [...state, action.payload];
+      return [action.payload, ...state];
     case REMOVE_BOOK:
       return [
         ...state.filter((book) => book.id !== action.payload),
@@ -28,7 +28,7 @@ export function addBook(book) {
       },
       body: JSON.stringify({
         item_id: book.id,
-        category: 'Fiction',
+        category: book.category,
         title: book.title,
         author: book.author,
       }),

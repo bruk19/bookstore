@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Book from '../components/Book';
 import React from 'react';
 import BookForm from '../components/BookForm';
-import { loadBooks } from '../redux/books/books';
+import { loadBooks } from '../redux/books/Books';
 
 
 const Books = () => {
@@ -18,7 +18,7 @@ const Books = () => {
     <>
       <section>
         {books && books.map(
-          (book) => <Book title={book.title} author={book.author} id={book.id} key={book.id} />,
+          (book) => <Book title={book.title} author={book.author} category={book.category} id={book.id} key={book.id} />,
         )}
       </section>
       <section>
