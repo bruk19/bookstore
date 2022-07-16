@@ -6,6 +6,7 @@ import Books from './pages/Books';
 import { Provider } from 'react-redux';
 import Book from './components/Book';
 import App from './App';
+import './App.css';
 import store from './redux/configureStore';
 
 
