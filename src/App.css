@@ -52,7 +52,6 @@ nav ul {
 }
 
 .nav-link {
-  font-family: 'Montserrat';
   font-weight: normal;
   font-size: 0.813rem;
   color: var(--black-two);
@@ -75,6 +74,10 @@ nav ul {
   align-items: flex-start;
 }
 
+.form form > * {
+  flex-basis: 25%;
+}
+
 .book > *:first-child {
   flex-basis: 40%;
 }
@@ -87,10 +90,6 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.form form > * {
-  flex-basis: 25%;
 }
 
 .books-line {
