@@ -74,6 +74,10 @@ nav ul {
   align-items: flex-start;
 }
 
+.book > *:first-child {
+  flex-basis: 40%;
+}
+
 .form {
   flex-direction: column;
 }
@@ -166,4 +170,10 @@ nav ul {
   border: none;
   margin-top: 1.438rem;
   width: 11.5rem;
+}
+
+.chapter-info {
+  border-left: solid 1px var(--white-two);
+  padding-left: 5em;
+  margin-left: -5em;
 }
