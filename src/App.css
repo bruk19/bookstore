@@ -61,10 +61,6 @@ nav ul {
   letter-spacing: 1.9px;
 }
 
-.line {
-  border: 1px solid var(--white-two);
-}
-
 .book {
   display: flex;
   border: 1px solid rgb(221, 221, 221);
@@ -91,4 +87,13 @@ nav ul {
 
 .form form > * {
   flex-basis: 25%;
+}
+
+.books-line {
+  margin: 0 6.25rem;
+}
+
+.books-section,
+.form-section {
+  margin: 1.813rem 6.25rem;
 }

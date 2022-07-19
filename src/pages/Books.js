@@ -16,13 +16,13 @@ const Books = () => {
 
   return (
     <>
-      <section>
+      <section className="books-section">
         {books && books.map(
           (book) => <Book title={book.title} author={book.author} category={book.category} id={book.id} key={book.id} />,
         )}
       </section>
-      <section>
-        <loadBooks />
+      <hr className="line books-line" />
+      <section className="form-section">
         <BookForm />
       </section>
     </>
