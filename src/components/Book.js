@@ -10,10 +10,10 @@ const Book = ({ title, author, id, category }) => {
   return (
     <div className="book">
       <div>
-        <span>{category}</span>
-        <h2>{title}</h2>
-        <h3>{author}</h3>
-        <div>
+      <span className="book-category">{category}</span>
+      <h2 className="book-title">{title}</h2>
+      <h3 className="book-author">{author}</h3>
+      <div className="book-actions">
           <button type="button">Comments</button>
           <button type="button" onClick={() => dispatch(removeBook(id))}>Remove</button>
           <button type="button">Edit</button>
