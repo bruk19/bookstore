@@ -25,6 +25,8 @@ const BookForm = () => {
       category: categories[Math.floor(Math.random() * categories.length)],
     };
     dispatch(addBook(newBook));
+    setAuthor('');
+    setTitle('');
   };
 
   return (
@@ -32,8 +34,8 @@ const BookForm = () => {
     <div className="form">
       <h2 className="add-book-title">ADD NEW BOOK</h2>
       <form onSubmit={(e)=> handleSubmit(e)}>
-        <input type="text" name="title" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
-        <input type="text" name="author" placeholder="Author" onChange={(e) => setAuthor(e.target.value)} />
+        <input type="text" name="title" placeholder="Book title" value={title} onChange={(e) => setTitle(e.target.value)} />
+        <input type="text" name="author" placeholder="Author" value={author} onChange={(e) => setAuthor(e.target.value)} />
         <button type="submit" className="add-book-btn">ADD BOOK</button>
       </form>
     </div>

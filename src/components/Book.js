@@ -1,7 +1,7 @@
 import React from 'react'
 import './Book.css';
 import { useDispatch } from 'react-redux';
-import { CircularProgressBar } from '@tomik23/react-circular-progress-bar';
+import { CircularProgressBar } from '@tomik23/react-circular-progress-bar/dist';
 import { removeBook } from '../redux/books/Books';
 
 
