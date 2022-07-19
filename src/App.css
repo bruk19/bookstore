@@ -52,6 +52,7 @@ nav ul {
 }
 
 .nav-link {
+  font-family: 'Montserrat';
   font-weight: normal;
   font-size: 0.813rem;
   color: var(--black-two);
@@ -143,6 +144,39 @@ nav ul {
 }
 
 .curent-chapter {
+  opacity: 0.5;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: var(--black-two);
+}
+
+.book-progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.progress-stats {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.313rem;
+}
+
+.percentage {
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--black-two);
+}
+
+.percentage-completed {
+  opacity: 0.5;
+  font-family: 'Montserrat', serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: var(--black-two);
+}
+
+.current-chapter {
   opacity: 0.5;
   font-family: 'RobotoSlab Light', serif;
   font-size: 0.813rem;
