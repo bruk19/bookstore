@@ -177,3 +177,44 @@ nav ul {
   padding-left: 5em;
   margin-left: -5em;
 }
+
+.add-book-title {
+  font-family: 'Montserrat', serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: var(--warm-grey);
+  margin-bottom: 1.888rem;
+}
+
+.form input {
+  height: 2.813rem;
+  border-radius: 4px;
+  border: solid 1px var(--white-two);
+  background-color: var(--white);
+  width: 40%;
+  margin-right: 2.125rem;
+  padding: 0 1.063rem;
+}
+
+.form input::placeholder {
+  font-family: 'Montserrat', serif;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  color: var(--very-light-pink);
+}
+
+.add-book-btn {
+  width: 11.5rem;
+  height: 2.813rem;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--azure);
+  font-family: 'RobotoSlab Bold', serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white);
+  cursor: pointer;
+}
