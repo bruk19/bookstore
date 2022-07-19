@@ -1,11 +1,13 @@
 import React from 'react'
 import './Book.css';
 import { useDispatch } from 'react-redux';
+import { CircularProgressBar } from '@tomik23/react-circular-progress-bar';
 import { removeBook } from '../redux/books/Books';
 
 
 const Book = ({ title, author, id, category }) => {
   const dispatch = useDispatch();
+  const [randomPercentage] = useState(Math.floor(Math.random() * 100));
 
   return (
     <div className="book">
@@ -19,9 +21,15 @@ const Book = ({ title, author, id, category }) => {
           <button type="button">Edit</button>
         </div>
       </div>
-      <div>
-        <span>64%</span>
-        <span>Completed</span>
+      <div className="book-progress">
+        <CircularProgressBar percent={randomPercentage} linearGradient={['#307bbe', '#379cf6']} size={100} number={false} colorCircle="#c4c4c4" />
+        <div className="progress-stats">
+          <span className="percentage">
+            {randomPercentage}
+            %
+          </span>
+          <span className="percentage-completed">Completed</span>
+        </div>
       </div>
       <div>
         <h3>CURRENT CHAPTER</h3>
